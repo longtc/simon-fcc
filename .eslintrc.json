@@ -1,0 +1,48 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true
+  },
+  "plugins": ["babel"],
+  "extends": ["eslint:recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+  },
+  "rules": {
+      "no-var": 2,
+      "prefer-const": 2,
+      "dot-location": [2, "property"],
+      "no-console": 0,
+      "no-else-return": 2,
+      "no-throw-literal": 2,
+      "no-void": 2,
+      "wrap-iife": [2, "inside"],
+      "strict": [2, "never"],
+      "array-bracket-spacing": [2, "never"],
+      "comma-style": [2, "last"],
+      "computed-property-spacing": [2, "never"],
+      "no-lonely-if": 2,
+      "no-multiple-empty-lines": [2, { "max": 2 }],
+      "no-nested-ternary": 2,
+      "func-call-spacing": 2,
+      "no-unneeded-ternary": 2,
+      "object-curly-spacing": [2, "always"],
+      "quote-props": [2, "as-needed"],
+      "space-before-blocks": [2, "always"],
+      "space-before-function-paren": [2, {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "always"
+      }],
+      "space-in-parens": [2, "never"],
+      "spaced-comment": [2, "always"],
+      "object-shorthand": [2, "always"],
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "linebreak-style": ["error", "windows"],
+      "quotes": [2, "double", { "avoidEscape": true }],
+      "semi": [2, "always"],
+      "brace-style": [2, "1tbs", { "allowSingleLine": true }]
+  }
+}
